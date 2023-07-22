@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">
+                <div class="logo"><img src="logo1.png"></div>
+                <div class="website-name">Abhiram's Porfolio</div>
+            </div>
+            <ul>
+                <li><a href="#firstsection">About</a></li>
+                <li><a href="#secondsection">Projects</a></li>
+                <li><a href="/">Posts</a></li>
+                <li><a href="/">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="firstsection" class="firstsection">
+        <div class="leftsection">
+            Hi! My name is <span class="violet">Abhiram</span>
+            <div>and , I am a passionate</div>
+            <span id="element"></span>
+        </div>
+        <div class="rightsection">
+            <img src="developer.png">
+        </div>
+    </section>
+    <section id="secondsection" class="secondsection">
+        <div class="hor-line"></div>
+        <span class="text-gray">Projects I have done so far</span><br>
+        <h4>Projects</h4>
+        <div class="project1">
+            <img src="i1.gif">
+            <p><b>Memory Game</b><br>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit<br> amet
+                consectetur adipisicing elit. Recusandae, soluta? Aut eos expedita dignissimos porro laudantium
+                voluptate.<br>
+                <button>Github</button><button>Run</button>
+            </p>
+        </div>
+        <div class="project2">
+            <p><b>Tic Tac Toe Game</b><br>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit<br>
+                amet consectetur adipisicing elit. Recusandae, soluta? Aut eos expedita dignissimos porro laudantium
+                voluptate.<br>
+                <button>Github</button><button>Run</button>
+            </p>
+            <img src="i2.gif">
+        </div>
+    </section>
+    <div class="hor-line1"></div><br>
+    <section class="thirdsection">
+        <h2>Posts</h2><br>
+        <p class="post">Create a new post</p><button>Create</button>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element',
+            {
+                strings: ['Web Developer', 'Full-stack Developer', 'UI/UX Designer'],
+                typeSpeed: 50,
+            });
+    </script>
+</body>
+
+</html>
